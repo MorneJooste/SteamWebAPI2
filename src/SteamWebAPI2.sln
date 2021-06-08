@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteamWebAPI2", "SteamWebAPI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam.Models", "Steam.Models\Steam.Models.csproj", "{AC645B95-E479-4DD2-AFA3-998DCFF66361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steam.UnitTests", "Steam.UnitTests\Steam.UnitTests.csproj", "{FD59C506-0C06-45F3-AE6B-982A6185DBA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam.UnitTests", "Steam.UnitTests\Steam.UnitTests.csproj", "{FD59C506-0C06-45F3-AE6B-982A6185DBA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{139EC81B-958B-46A0-AD6D-4699DDA6D437}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
