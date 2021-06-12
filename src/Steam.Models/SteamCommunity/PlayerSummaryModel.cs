@@ -1,43 +1,52 @@
 ﻿using System;
+using Google.Cloud.Firestore;
 
 namespace Steam.Models.SteamCommunity
 {
+    [FirestoreData]
     public class PlayerSummaryModel
     {
         /// <summary>
         /// Unique Steam ID of the player. Resolve this using ResolveVanityUrl interface method.
         /// </summary>
+        [FirestoreProperty]
         public ulong SteamId { get; set; }
 
         /// <summary>
         /// Determines the visibility of the user's profile (public, private, friends)
         /// </summary>
+        [FirestoreProperty]
         public ProfileVisibility ProfileVisibility { get; set; }
 
         /// <summary>
         /// If set to 1, the user has configured his profile.
         /// </summary>
+        [FirestoreProperty]
         public uint ProfileState { get; set; }
 
         /// <summary>
         /// User's current nick name (displayed in profile and friends list)
         /// </summary>
+        [FirestoreProperty]
         public string Nickname { get; set; }
 
         /// <summary>
         /// The date at which the user last logged off Steam
         /// It's a 64-bit integer in the JSON response, so we parse it to a DateTime
         /// </summary>
+        [FirestoreProperty]
         public DateTime LastLoggedOffDate { get; set; }
 
         /// <summary>
         /// The selected privacy/visibility level of the player's comments section on their Steam Community profile
         /// </summary>
+        [FirestoreProperty]
         public CommentPermission CommentPermission { get; set; }
 
         /// <summary>
         /// The URL for the player's Steam Community profile
         /// </summary>
+        [FirestoreProperty]
         public string ProfileUrl { get; set; }
 
         /// <summary>
@@ -58,11 +67,13 @@ namespace Steam.Models.SteamCommunity
         /// <summary>
         /// The current status of the user on the Steam network
         /// </summary>
+        [FirestoreProperty]
         public UserStatus UserStatus { get; set; }
 
         /// <summary>
         /// The player's real name as entered on their Steam profile
         /// </summary>
+        [FirestoreProperty]
         public string RealName { get; set; }
 
         /// <summary>
@@ -74,11 +85,13 @@ namespace Steam.Models.SteamCommunity
         /// The date at which the user created their Steam account
         /// It's a 64-bit integer in the JSON response, so we parse it to a DateTime
         /// </summary>
+        [FirestoreProperty]
         public DateTime AccountCreatedDate { get; set; }
 
         /// <summary>
         /// The player's selected country
         /// </summary>
+        [FirestoreProperty]
         public string CountryCode { get; set; }
 
         /// <summary>
@@ -94,14 +107,16 @@ namespace Steam.Models.SteamCommunity
         /// <summary>
         /// The name of the game that a player is currently playing
         /// </summary>
+        [FirestoreProperty]
         public string PlayingGameName { get; set; }
 
         /// <summary>
         /// The id of the game that the player is currently playing. This doesn't seem to be an appid, so I'm not sure how to make use of this field.
         /// </summary>
+        [FirestoreProperty]
         public string PlayingGameId { get; set; }
-		
-		/// <summary>
+
+        /// <summary>
         /// The IP of the server the user is currently playing on.
         /// </summary>
         public string PlayingGameServerIP { get; set; }

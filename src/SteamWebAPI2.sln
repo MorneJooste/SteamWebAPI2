@@ -11,6 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam.UnitTests", "Steam.Un
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{139EC81B-958B-46A0-AD6D-4699DDA6D437}"
 	ProjectSection(SolutionItems) = preProject
+		nuget-push.txt = nuget-push.txt
 		nuget.config = nuget.config
 	EndProjectSection
 EndProject
