@@ -1,1 +1,1 @@
-nuget.exe push -Source JoosteHost -ApiKey az "C:\Users\morne\source\repos\MorneJooste\SteamWebAPI2\src\SteamWebAPI2\bin\Release\SteamWebAPI2.JoosteHost.1.0.3.nupkg"
+nuget.exe push -Source JoosteHost -ApiKey az "C:\Users\morne\source\repos\MorneJooste\SteamWebAPI2\src\SteamWebAPI2\bin\Release\SteamWebAPI2.JoosteHost.1.0.4.nupkg"
